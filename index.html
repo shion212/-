@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="スクリーンショット 2022-01-24 11.10.21.jpeg" alt="犬">
+
+    <div class="wrapper">
+        <div class="area">
+            <div id="member">
+                <h2>参加メンバー：</h2>
+                <label><input type="checkbox" value="山ちゃん" checked/> 山ちゃん</label>
+                <label><input type="checkbox" value="りゅうや" checked/> りゅうや</label>
+                <label><input type="checkbox" value="しおん" checked/> しおん</label>
+            </div>
+
+            <div id="honsuu">
+                <h2>くじの本数：</h2>
+                あたり：<select name="hit">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4" selected>4</option>
+			</select>
+                <!--
+	  -->はずれ：<select name="miss">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4" selected>4</option>
+			</select><br>
+            </div>
+            <div class="button">
+                <input type="button" value="抽選開始" onclick="start();">
+                <!-- 関数startを実行する。 -->
+            </div>
+            <div id="result">
+                <h3>あたり：</h3>
+                <h3>はずれ：</h3>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
